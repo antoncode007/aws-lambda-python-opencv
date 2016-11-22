@@ -19,7 +19,7 @@ cp -rf build/numpy/lib64/python2.7/site-packages/numpy lambda-package
 	git checkout 3.1.0
 	cmake									\
 		-D CMAKE_BUILD_TYPE=RELEASE				        \
-		-D OPENCV_EXTRA_MODULES_PATH=..\opencv_contrib\modules          \
+		-D OPENCV_EXTRA_MODULES_PATH=/home/ec2-user/aws-lambda-python-opencv-master/opencv_contrib/modules          \
 		-D BUILD_opencv_contrib_world=ON                                \
 		-D WITH_TBB=ON							\
 		-D WITH_IPP=ON							\
